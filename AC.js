@@ -63,6 +63,10 @@ app.post("/cadastropessoa", async(req, res)=>{
 
 });
 
+//rota para o ge de cadastro
+app.get("/cadastropessoa", async(req, res)=>{
+    res.sendFile(__dirname +"/cadastropessoa.html");
+})
 
 app.get("/", async(req, res)=>{
     res.sendFile(__dirname +"/index.html");
